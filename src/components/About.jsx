@@ -19,11 +19,9 @@ function About() {
                                     </li>
                                                                         
                                 </ul>
-                                 <br>
+                                 
                                 
-                                <!-- <p id="font1" font="Arial">
-                                <font="Arial">test</font>These cats aren’t just pets; they’re hardworking, independent, and an essential part of a well-run operation. Give them shelter, a little food, and they’ll work hard for you protecting your feed, equipment, and crops like they’ve done for centuries
-                            </p> -->
+                            </p>    
                             <p>
                                 At The Mighty Mouser, we provide everything you need to support your barn cats including:
                                 <ul>
@@ -37,6 +35,7 @@ function About() {
                             </p>
       <p>The Sun is so large that about 1.3 million Earths could fit inside it.</p>
     </div>
+   
   );
 }
 
