@@ -158,10 +158,19 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     flex-grow: 2;
+    
     min-height: 300px; /* Ensures a reasonable minimum height */
-  max-height: 700px; /* Prevents excessive height differences */
+    max-height: 700px; /* Prevents excessive height differences */
     
 }
+.custom-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    
+}
+
 .left-align {
     display: block;
     text-align: left;
@@ -490,4 +499,16 @@ a .nav-link  {
 }
 .link-maroon .nav-link {
   color: maroon !important;
+}
+
+/* Button.css */
+.custom-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    /* Or your custom color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Add other styles as needed */
 }
