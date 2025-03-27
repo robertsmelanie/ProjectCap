@@ -1,20 +1,37 @@
-import React from 'react';
 
-function Contact() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import Contact from './Contact';
+import About from './About';
+
+function App() {
   return (
-    <section className="contact">
-      <h2>Contact Us</h2>
-      <form onSubmit={(e) => e.preventDefault()}>
-        <label>Name:</label><br />
-        <input type="text" /><br />
-        <label>Email:</label><br />
-        <input type="email" /><br />
-        <label>Message:</label><br />
-        <textarea></textarea><br />
-        <button type="submit">Send</button>
-      </form>
-    </section>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
-export default Contact;
+export default App;
+
