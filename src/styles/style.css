@@ -512,3 +512,164 @@ a .nav-link  {
     border-radius: 4px;
     /* Add other styles as needed */
 }
+
+/* BarnCatHistory.module.css */
+.title {
+    text-align: center;
+    /* Add other title styles */
+}
+
+.container-fluid.container1 {
+    background-image: url('./your-background-image.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* Example text color on background */
+}
+
+.container {
+    /* Styles for the inner container */
+}
+
+.containertext {
+    background-color: #800000;
+    /* Maroon color */
+    color: white;
+    border-radius: 8px;
+}
+
+.scroll-box {
+    /* Styles for the scrollable box */
+    padding: 15px;
+    max-height: 500px;
+    /* Example max height */
+    overflow-y: auto;
+}
+
+.containerleft {
+    /* Styles for the left container within the scroll box */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.shadow {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.containerbuttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.containerbuttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    /* Add button specific styles */
+}
+
+.health {
+    background-color: #4CAF50;
+    /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.supplies {
+    background-color: #008CBA;
+    /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.history {
+    background-color: #f44336;
+    /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-custom {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+}
+/*maybe change this to a health only :-moz-user-disabled
+
+/* File: /styles/Health.module.css */
+
+.title {
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/background.jpg");
+    /* adjust as needed */
+    background-size: cover;
+}
+
+.containertext {
+    background-color: maroon;
+    color: white;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.containerleft {
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.containerbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.health,
+.supplies,
+.history {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.health:hover,
+.supplies:hover,
+.history:hover {
+    background-color: #a22;
+}
+
+.footerCustom {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222;
+    color: white;
+    margin-top: 2rem;
+}
