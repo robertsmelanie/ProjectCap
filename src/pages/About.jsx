@@ -1,6 +1,5 @@
 import React from "react";
-import "../style.css"; // global stylesheet
-import './styles/style.css'
+
 
 function About() {
     return (
