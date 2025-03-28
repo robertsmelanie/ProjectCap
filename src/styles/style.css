@@ -578,7 +578,7 @@ a .nav-link  {
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    
+
     /* Add button specific styles */
 
 }
@@ -674,4 +674,16 @@ a .nav-link  {
     background-color: #222;
     color: white;
     margin-top: 2rem;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
