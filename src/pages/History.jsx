@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useNavigate } from useNavigate();
+import './styles/style.css';
 
 const BarnCatHistory = () => {
     const navigateTo = (path) => {
