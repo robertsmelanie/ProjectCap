@@ -1,9 +1,10 @@
 import React from 'react';
+import "../style.css";
 
 function Footer() {
   return (
     <footer>
-      <p>&copy; {new Date().getFullYear()} Melanie's Pet Store</p>
+      <p>&copy; {new Date().getFullYear()} The Mighty Mouser Pet Store</p>
     </footer>
   );
 }
