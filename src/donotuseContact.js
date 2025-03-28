@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Contact() {
+function DoNotContact() {
     return (
         <section className="contact">
             <h2>Contact Us</h2>
@@ -17,4 +17,4 @@ function Contact() {
     );
 }
 
-export default Contact; // Export Contact as the default from this file
+export default DoNotContact; // Export Contact as the default from this file
