@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import './Navbar.css'; // or Navbar.module.css if you go modular
+// or Navbar.module.css if you go modular
 import '../styles/Components.css';
 
 function Navbar() {
@@ -21,7 +21,7 @@ function Navbar() {
     </nav>
   );
 }
-
+export default Navbar;
 // export default Navbar;
 // function Navbar() {
 //   return (

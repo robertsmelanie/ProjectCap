@@ -7,8 +7,9 @@ import Supplies from "./pages/Supplies";
 import History from "./pages/History";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-// import Shop from "./pages/Shop";
-// import Catcalc from "./pages/Catcalc";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import Catcalc from "./pages/Catcalc";
 import './App.css'
 import "./styles/style.css";
 

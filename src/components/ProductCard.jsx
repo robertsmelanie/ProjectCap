@@ -1,4 +1,4 @@
-import ProductCard from '../components/ProductCard';
+// import ProductCard from '../components/ProductCard';
 import '../styles/Components.css';
 
 const products = [
@@ -15,10 +15,10 @@ const products = [
   // Add more pets here...
 ];
 
-function Home() {
+function ProductCard() {
   return (
     <div>
-      <section className="hero">
+      <section>
         <h2>Welcome to Our Pet Store!</h2>
         <p>Your one-stop shop for all things pet-related.</p>
       </section>
@@ -36,3 +36,4 @@ function Home() {
     </div>
   );
 }
+export default ProductCard;
