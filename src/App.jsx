@@ -10,7 +10,7 @@ import About from "./pages/About";
 // import Shop from "./pages/Shop";
 // import Catcalc from "./pages/Catcalc";
 import './App.css'
-import "./styles/style.css"
+import "./styles/style.css";
 
 
 function App() {

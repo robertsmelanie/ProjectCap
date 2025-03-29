@@ -1,6 +1,7 @@
 // Button.jsx
 import React from 'react';
 import './Button.css'; // Custom styling for the button
+import '../styles/Components.css';
 
 function Button({ onClick, children }) {
     return (

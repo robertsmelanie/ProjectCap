@@ -1,4 +1,5 @@
 import ProductCard from '../components/ProductCard';
+import '../styles/Components.css';
 
 const products = [
   {

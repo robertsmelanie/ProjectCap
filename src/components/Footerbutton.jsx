@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import 'Navbar.css';
+import '../styles/Components.css';
 
 function FooterButtons() {
     return (
