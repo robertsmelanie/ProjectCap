@@ -10,7 +10,7 @@ function NavButton({ to, label }) {
             <NavLink
                 to={to}
                 className={({ isActive }) =>
-                    isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+                    isActive ? 'nav-link active' : 'nav-link'
                 }
             >
                 {label}

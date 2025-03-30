@@ -11,9 +11,9 @@ import NavButton from './Navbutton';
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="logo">PetStore</div>
-      <ul className="links">
+    <nav className="nav-bar">
+      <div className="dropdown">PetStore</div>
+      <ul className="menu-links">
         <NavButton to="/" label="Home" />
         <NavButton to="/History" label="History" />
         <NavButton to="/Health" label="Health" />

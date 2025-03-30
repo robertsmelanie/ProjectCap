@@ -25,7 +25,7 @@ function App() {
     <>
       <Navbar />
       <main>
-        <Router>
+        
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/Health' element={<Health />} />
@@ -36,7 +36,7 @@ function App() {
             <Route path='/Contact' element={<Contact />} />
             <Route path='/Catcalc' element={<Catcalc />} />
           </Routes>
-        </Router>
+        
 
 
       </main>
