@@ -527,10 +527,10 @@ a .nav-link  {
     color: white;
     /* Example text color on background */
 }
-
-.container {
-    /* Styles for the inner container */
-}
+/* Styles for the inner container */
+/* .container {
+    
+} */
 
 .containertext {
     background-color: #800000;
@@ -546,10 +546,10 @@ a .nav-link  {
     /* Example max height */
     overflow-y: auto;
 }
-
-.containerleft {
-    /* Styles for the left container within the scroll box */
-}
+ /* Styles for the left container within the scroll box */
+/* .containerleft {
+   
+} */
 
 .img-fluid {
     max-width: 100%;
