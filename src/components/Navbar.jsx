@@ -2,31 +2,31 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 // or Navbar.module.css if you go modular
-import '../styles/Components.css';
+import Components from '../styles/Components.css';
 // File: /components/Navbar.jsx
 
-// import NavButton from './NavButton';
+// import NavButton from '../components/NavButton.jsx';
 
 
-function Navbar() {
-  return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>PetStore</div>
-      <ul className={styles.links}>
-        <NavButton to="/" label="Home" />
-        <NavButton to="/History" label="History" />
-        <NavButton to="/Health" label="Health" />
-        <NavButton to="/Shop" label="Shop" />
-        <NavButton to="/About" label="About" />
-        <NavButton to="/Contact" label="Contact" />
-        <NavButton to="/Catcalc" label="Cat Calculator" />
-        <NavButton to="/Supplies" label="Supplies" />
-      </ul>
-    </nav>
-  );
-}
+// function Navbar() {
+//   return (
+//     <nav className={styles.navbar}>
+//       <div className={styles.logo}>PetStore</div>
+//       <ul className={styles.links}>
+//         <NavButton to="/" label="Home" />
+//         <NavButton to="/History" label="History" />
+//         <NavButton to="/Health" label="Health" />
+//         <NavButton to="/Shop" label="Shop" />
+//         <NavButton to="/About" label="About" />
+//         <NavButton to="/Contact" label="Contact" />
+//         <NavButton to="/Catcalc" label="Cat Calculator" />
+//         <NavButton to="/Supplies" label="Supplies" />
+//       </ul>
+//     </nav>
+//   );
+// }
 
-export default Navbar;
+// export default Navbar;
 
 // function Navbar() {
 //   return (
@@ -100,30 +100,30 @@ export default Navbar;
 //   );
 // }
 // export default Navbar;
-// export default Navbar;
-// function Navbar() {
-//   return (
-//     <nav>
-//       <ul>
-//         <li><Link to="/">Home</Link></li>
 
-//         <li><Link to="/History">History</Link></li>
-//         <li><Link to='/About'>About</Link></li>
-//         <li><Link to='/Contact'>Contact</Link></li>
-//         <li><Link to="/Health">Health</Link></li>
-//         <li><Link to="/History">History</Link></li>
-//         <li><Link to="/Catcalc">Cat Calculator</Link></li>
-//         <li><Link to="/Shop">Shop</Link></li>
-//         <li><Link to="/Supplies">Supplies</Link></li>
-//       </ul>
+function Navbar() {
+  return (
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
 
-
+        <li><Link to="/History">History</Link></li>
+        <li><Link to='/About'>About</Link></li>
+        <li><Link to='/Contact'>Contact</Link></li>
+        <li><Link to="/Health">Health</Link></li>
+        <li><Link to="/History">History</Link></li>
+        <li><Link to="/Catcalc">Cat Calculator</Link></li>
+        <li><Link to="/Shop">Shop</Link></li>
+        <li><Link to="/Supplies">Supplies</Link></li>
+      </ul>
 
 
 
-//     </nav>
 
-//   );
-// }
 
-// export default Navbar
+    </nav>
+
+  );
+}
+
+export default Navbar

@@ -1,5 +1,5 @@
 import '../styles/Components.css';
-import '../styles/style.css';
+// import '../styles/style.css';
 
 import React, { useState, useEffect } from 'react';
 
