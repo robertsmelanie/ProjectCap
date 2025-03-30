@@ -3,59 +3,82 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 // or Navbar.module.css if you go modular
 import '../styles/Components.css';
+// File: /components/Navbar.jsx
+
+// import NavButton from './NavButton';
 
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar__logo">PetStore</div>
-      <ul className="navbar__links">
-        <li>
-          <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/History" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            History
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Health" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            Health
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Shop" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            Shop
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/About" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Contact" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            Contact
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Catcalc" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            Cat Calculator
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Supplies" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            Supplies
-          </NavLink>
-        </li>
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>PetStore</div>
+      <ul className={styles.links}>
+        <NavButton to="/" label="Home" />
+        <NavButton to="/History" label="History" />
+        <NavButton to="/Health" label="Health" />
+        <NavButton to="/Shop" label="Shop" />
+        <NavButton to="/About" label="About" />
+        <NavButton to="/Contact" label="Contact" />
+        <NavButton to="/Catcalc" label="Cat Calculator" />
+        <NavButton to="/Supplies" label="Supplies" />
       </ul>
     </nav>
   );
 }
 
 export default Navbar;
+
+// function Navbar() {
+//   return (
+//     <nav className="navbar">
+//       <div className="navbar__logo">PetStore</div>
+//       <ul className="navbar__links">
+//         <li>
+//           <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             Home
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/History" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             History
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/Health" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             Health
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/Shop" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             Shop
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/About" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             About
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/Contact" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             Contact
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/Catcalc" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             Cat Calculator
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/Supplies" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+//             Supplies
+//           </NavLink>
+//         </li>
+//       </ul>
+//     </nav>
+//   );
+// }
+
+// export default Navbar;
 
 
 
