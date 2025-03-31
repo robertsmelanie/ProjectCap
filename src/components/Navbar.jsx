@@ -9,25 +9,66 @@ import NavButton from './Navbutton';
 // import NavButton from '../components/NavButton.jsx';
 
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="nav-bar">
-      <div className="dropdown">PetStore</div>
-      <ul className="menu-links">
-        <NavButton to="/" label="Home" />
-        <NavButton to="/History" label="History" />
-        <NavButton to="/Health" label="Health" />
-        <NavButton to="/Shop" label="Shop" />
-        <NavButton to="/About" label="About" />
-        <NavButton to="/Contact" label="Contact" />
-        <NavButton to="/Catcalc" label="Cat Calculator" />
-        <NavButton to="/Supplies" label="Supplies" />
-      </ul>
-    </nav>
+    <div className="nav-bar">
+      <div className="dropdown">
+        <button className="btn btn-secondary menu-button d-md-none">Menu</button>
+        <div className="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact Page</a>
+          <a href="about.html">About Us</a>
+          <a href="health.html">Health</a>
+          <a href="history.html">History</a>
+        </div>
+      </div>
+      <div className="menu-links nav-links d-none d-md-flex">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Page</a>
+        <a href="about.html">About Us</a>
+        <a href="health.html">Health</a>
+        <a href="history.html">History</a>
+      </div>
+      <div className="supplies-link">
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={() => window.location.href = './supplies.html'}
+        >
+          Buy Supplies
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={() => window.location.href = './calc.html'}
+        >
+          How Old Is My Cat?
+        </button>
+      </div>
+    </div>
   );
-}
+};
 
 export default Navbar;
+
+// function Navbar() {
+//   return (
+//     <nav className="nav-bar">
+//       <div className="dropdown">PetStore</div>
+//       <ul className="menu-links">
+//         <NavButton to="/" label="Home" />
+//         <NavButton to="/History" label="History" />
+//         <NavButton to="/Health" label="Health" />
+//         <NavButton to="/Shop" label="Shop" />
+//         <NavButton to="/About" label="About" />
+//         <NavButton to="/Contact" label="Contact" />
+//         <NavButton to="/Catcalc" label="Cat Calculator" />
+//         <NavButton to="/Supplies" label="Supplies" />
+//       </ul>
+//     </nav>
+//   );
+// }
+
+// export default Navbar;
 
 // function Navbar() {
 //   return (
