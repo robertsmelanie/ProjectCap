@@ -1,5 +1,7 @@
 import React from 'react';
 import "../styles/Components.css";
+import FooterButtons from '../components/Footerbutton';
+import Footerbutton from '../components/Footerbutton';
 
 function Health() {
     return (
@@ -94,9 +96,16 @@ function Health() {
                     Home
                 </button>
             </div>
+            
+            <FooterButtons />
+            <Footer />
+
+           
+           
 
             {/* Footer */}
-            <div className={styles.footerCustom}>Copyright 2025</div>
+            <div className="footer-custom text-center py-4">Copyright 2025</div>
+            
         </div>
     );
 }

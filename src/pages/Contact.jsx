@@ -5,6 +5,9 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About';
 import '../styles/Components.css';
+// import Footerbutton from '../components/Footerbutton';
+import FooterButtons from '../components/Footerbutton';
+import Footer from '../components/Footer';
 
 
 function App() {
@@ -31,7 +34,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <FooterButtons />
+      <Footer />
     </Router>
+
+
   );
 }
 

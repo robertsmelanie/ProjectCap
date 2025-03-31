@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
 import '../styles/Components.css';
+import FooterButtons from '../components/Footerbutton';
 
 const shopItems = [
   {
@@ -22,16 +23,28 @@ const shopItems = [
 
 function Shop() {
   return (
-    <section className="products">
-      {shopItems.map((item, index) => (
-        <ProductCard
-          key={index}
-          image={item.image}
-          name={item.name}
-          description={item.description}
-        />
-      ))}
-    </section>
+    <>
+      <Navbar />
+      <main>
+        <section className="products">
+          {shopItems.map((item, index) => (
+            <ProductCard
+              key={index}
+              image={item.image}
+              name={item.name}
+              description={item.description}
+            />
+          ))}
+        </section>
+      </main>
+      
+      <FooterButtons />
+      <Footer />
+    </>
+
+
+
+
   );
 }
 

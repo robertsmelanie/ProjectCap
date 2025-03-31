@@ -3,6 +3,8 @@ import React from 'react';
 // import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Components.css';
+import Footerbutton from '../components/Footerbutton';
+import FooterButtons from '../components/Footerbutton';
 
 
 const History = () => {
@@ -54,6 +56,9 @@ const History = () => {
                     </div>
                 </div>
             </div>
+            <FooterButtons />
+            
+            <Footer />
 
             {/* Navigation Buttons */}
             <div className="containerbuttons flex justify-center py-6">

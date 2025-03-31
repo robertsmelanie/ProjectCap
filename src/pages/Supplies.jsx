@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Components.css';
+import FooterButtons from '../components/Footerbutton';
 
 
 function Supplies() {
@@ -14,6 +15,7 @@ function Supplies() {
                     <p>Your one-stop shop for all things pet-related.</p>
                 </section>
             </main>
+            <FooterButtons />
             <Footer />
         </>
     );
