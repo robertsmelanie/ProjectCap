@@ -1,23 +1,26 @@
 import React from 'react';
 import "../styles/Components.css";
 import FooterButtons from '../components/Footerbutton';
-import Footerbutton from '../components/Footerbutton';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Health() {
     return (
-        <div>
-            {/* Navbar Component */}
-            {/* Replace with: <Navbar /> once componentized */}
-
-            {/* Title */}
-            <div className={styles.title}>
+         <>
+            <Navbar />
+            <main className="main">
+                <section className="hero">
+                    {/* Title */}
+            <div className="title">
                 <h1>Barn Cat Health</h1>
             </div>
-
-            {/* Background Image Section */}
-            <div className={`${styles.container1} py-5`}>
-                <div className={`${styles.containertext} p-4 mx-auto`}>
-                    <div className={styles.containerleft}>
+                    <h2>Welcome to Our Pet Store!</h2>
+                    <p>Your one-stop shop for all things pet-related.</p>
+                </section>
+                {/* Background Image Section */}
+            <div className="container1 py-5">
+                <div className="containertext p-4 mx-auto">
+                    <div className="containerleft">
                         <img
                             src="/assets/illustration_for_barn_cats_9.png"
                             alt="BarnCats"
@@ -83,30 +86,11 @@ function Health() {
                     </div>
                 </div>
             </div>
-
-            {/* Navigation Buttons */}
-            <div className={styles.containerbuttons}>
-                <button onClick={() => (window.location.href = "/health")} className={styles.health}>
-                    Health
-                </button>
-                <button onClick={() => (window.location.href = "/supplies")} className={styles.supplies}>
-                    Supplies
-                </button>
-                <button onClick={() => (window.location.href = "/")} className={styles.history}>
-                    Home
-                </button>
-            </div>
-            
+            </main>
             <FooterButtons />
             <Footer />
-
-           
-           
-
-            {/* Footer */}
-            <div className="footer-custom text-center py-4">Copyright 2025</div>
-            
-        </div>
+        </>
+      
     );
 }
 export default Health;
