@@ -18,7 +18,7 @@ const History = () => {
 
     return (
         <>
-            <Navbar />
+         
             <main>
                 <div className="flex flex-col">
                     <div className="title text-center py-4">
@@ -26,11 +26,10 @@ const History = () => {
                     </div>
 
                     {/* Background Section */}
-                    <div>
-                        className="container-fluid container1 flex justify-center items-center py-8 bg-cover bg-center min-h-[300px] md:min-h-[400px]"
+                    <div className="container-fluid container1 flex justify-center items-center py-8 bg-cover bg-center min-h-[300px] md:min-h-[400px]"
                         style={{
                             backgroundImage: `url('/images/barncats-history.jpg')` // Replace with your actual image
-                        }}
+                        }}>
 
                         <div className="container">
                             <div className="containertext p-4 mx-auto bg-maroon rounded-lg shadow-md">
@@ -62,9 +61,7 @@ const History = () => {
                 </div>
 
             </main>
-                    <FooterButtons />
-
-                    <Footer />
+                   
              </>
 
                              
