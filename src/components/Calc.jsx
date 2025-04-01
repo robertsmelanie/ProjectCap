@@ -2,7 +2,7 @@
 import '../styles/Components.css';
 // import '../styles/style.css';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Calc = () => {
     const [birthMonth, setBirthMonth] = useState('');
@@ -64,9 +64,9 @@ const Calc = () => {
         });
 
     return (
-        <div className={styles.container}>
+        <div className="container">
             <h2>Cat Age Calculator</h2>
-            <div className={styles.form}>
+            <div className="form">
                 <label>
                     Birth Month:
                     <select value={birthMonth} onChange={(e) => setBirthMonth(e.target.value)}>
@@ -83,7 +83,7 @@ const Calc = () => {
                 </label>
                 <button onClick={handleCalculate}>Calculate</button>
             </div>
-            {result && <p className={styles.result}>{result}</p>}
+            {result && <p className="result">{result}</p>}
         </div>
     );
 };
