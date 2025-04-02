@@ -1,8 +1,8 @@
 import React from 'react';
 import "../styles/Components.css";
-import FooterButtons from '../components/Footerbutton';
+
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 function Health() {
     return (
