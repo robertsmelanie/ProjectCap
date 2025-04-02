@@ -1,6 +1,5 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Health from "./pages/Health";
 import Supplies from "./pages/Supplies";
@@ -12,11 +11,12 @@ import Shop from "./pages/Shop";
 import Catcalc from "./pages/Catcalc";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import FooterButtons from './components/Footerbutton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import "./styles/style.css";
-import FooterButtons from './components/Footerbutton';
+
 // import "./styles/Components.css";
 
 

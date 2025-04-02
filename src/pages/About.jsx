@@ -59,7 +59,7 @@ function About() {
                         </div>
                     </section>
                 </main>
-                <FooterButtons />
+                
             </routes>
         </>
 
