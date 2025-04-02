@@ -87,8 +87,8 @@ function Health() {
                 </div>
             </div>
             </main>
-            <FooterButtons />
-            <Footer />
+            
+            
         </>
       
     );
