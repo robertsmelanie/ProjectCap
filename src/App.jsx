@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import "./styles/style.css";
+import FooterButtons from './components/Footerbutton';
 // import "./styles/Components.css";
 
 
@@ -41,6 +42,7 @@ function App() {
 
 
           </main>
+          <FooterButtons />
           <Footer />
         </>
       </Router>
