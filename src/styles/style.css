@@ -52,7 +52,7 @@
     color: turquoise;
   } 
   .background-img{
-    background-image: url('.../cat_Designpage1.png');
+    background-image: url('../cat_Designpage1.png');
     /* background-image: url('./cat_Designpage1.png');  */
     background-color: maroon;
     background-size: cover ;
@@ -175,6 +175,8 @@ button {
 .left-align {
     display: block;
     text-align: left;
+    font-size: 18px;
+    
 }
 
 
