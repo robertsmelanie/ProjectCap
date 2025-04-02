@@ -52,7 +52,8 @@
     color: turquoise;
   } 
   .background-img{
-    background-image: url('./cat_Designpage1.png'); 
+    background-image: url('.../cat_Designpage1.png');
+    /* background-image: url('./cat_Designpage1.png');  */
     background-color: maroon;
     background-size: cover ;
     height: 900px;

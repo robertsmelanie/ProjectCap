@@ -23,28 +23,30 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-        <Router>
-    <>
-      <Navbar />
-      <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='/health' element={<Health />} />
-            <Route path="/supplies" element={<Supplies />} />
-            <Route path='/history' element={<History />} />
-            <Route path='/about' element={<About />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/calc' element={<Catcalc />} />
-          </Routes>
+    <div className="background-img">
+      <Router>
+        <>
+          <Navbar />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path='/health' element={<Health />} />
+              <Route path="/supplies" element={<Supplies />} />
+              <Route path='/history' element={<History />} />
+              <Route path='/about' element={<About />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/calc' element={<Catcalc />} />
+            </Routes>
 
 
-      </main>
-      <Footer />
-    </>
-        </Router>
-      
-      
+          </main>
+          <Footer />
+        </>
+      </Router>
+
+
+    </div>
   );
 }
 
