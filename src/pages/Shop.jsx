@@ -38,7 +38,7 @@ function Shop() {
         </section>
       </main>
       
-      <FooterButtons />
+      
       <Footer />
     </>
 

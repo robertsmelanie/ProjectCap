@@ -10,12 +10,12 @@ import FooterButtons from '../components/Footerbutton';
 function Catcalc() {
     return (
         <>
-            <Navbar />
+            
             <main>
                 <Calc />
             </main>
-            <FooterButtons />
-            <Footer />
+            
+            
         </>
 
          

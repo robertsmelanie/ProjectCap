@@ -3,15 +3,11 @@ import '../styles/Components.css';
 
 
 
-import '../styles/Components.css';
-
-import FooterButtons from '../components/Footerbutton';
-
 function About() {
     return (
         <>
             <routes>
-                <main>
+                <main className="background-img">
                     <section className="about-section">
                         <h2>
                             <span className="title">About Us - The Mighty Mouser</span>
