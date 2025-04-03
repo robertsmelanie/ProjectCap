@@ -32,10 +32,10 @@ function Catcalc() {
                  </div>  */}
                 <br />
                 <Calc />
-                <BarnCatsImage />
+                
                             
             </div>
-                        
+                            <BarnCatsImage />              
         
       </div>
     </div></div>
