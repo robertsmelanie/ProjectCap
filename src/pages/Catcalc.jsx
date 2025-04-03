@@ -13,7 +13,7 @@ function Catcalc() {
         <>
 
             <main>
-               <div>
+               {/* <div> */}
   <div className="title">
     <h1>
       Barn Cat Calculator - The Mighty Mouser
@@ -25,19 +25,18 @@ function Catcalc() {
       <div className="container1">
         <br />
         <div className="containertext">
-          {/* <div className="containerleft">
-            <br />
-            <h1>Cat Age Calculator</h1>
+            <div className="containerleft">
+                <br />
+                {/*<h1>Cat Age Calculator</h1>
           
-            </div>  */}
-                                <br />
-                                <Calc />
-                                <BarnCatsImage />
+                 </div>  */}
+                <br />
+                <Calc />
+                <BarnCatsImage />
                             
-                            </div>
+            </div>
                         
-        <div className="cats9">
-        </div>
+        
       </div>
     </div></div>
 
