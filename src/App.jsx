@@ -39,8 +39,10 @@ function App() {
             </Routes>
 
 
+          
+            <FooterButtons />
+            <br />
           <Footer />
-          <FooterButtons />
           </main>
         </>
       </Router>

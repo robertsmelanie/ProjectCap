@@ -11,11 +11,16 @@ function Home() {
 
       <main className="main">
         <section className="hero">
-          <h2>Welcome to Our Pet Store!</h2>
-          <p>Your one-stop shop for all things pet-related.</p>
-          {/* <div className="title">
-            
-          </div> */}
+          {/* <h2>Welcome to Our Pet Store!</h2>
+          <p>Your one-stop shop for all things pet-related.</p> */}
+          <div className="title">
+            <h1>
+              The Mighty Mouser
+            </h1>
+            <h3>
+              A Pet Store Dedicated to the Mighty Barn Cat
+            </h3>
+          </div>
           <br />
 
          
