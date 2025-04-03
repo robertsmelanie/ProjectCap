@@ -14,6 +14,31 @@ import Footer from "./components/Footer";
 import FooterButtons from './components/Footerbutton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const express = require('express');
+const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
+
+const app = express();
+
+app.use(express.static('public'));
+
+// app.set('view engine', 'ejs');  I don't think I need this one but not sure
+
+//database connection
+const dbURI = 'mongodb.srv://more'
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+  .then((result) => app.listen(3000))
+  .catach((err) => console.log(err));
+
+  //routes
+app.get('/', (req, res) => res.render('home'));
+app.get('/word', (req, res) => res.render('name'));
+
+app.use(authRoutes);
+
+
+
+})
 
 // import "./styles/Components.css";
 
