@@ -28,7 +28,7 @@ app.use(express.static('public'));
 const dbURI = 'mongodb.srv://more'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
   .then((result) => app.listen(3000))
-  .catach((err) => console.log(err));
+  .catch((err) => console.log(err));
 
   //routes
 app.get('/', (req, res) => res.render('home'));
@@ -37,8 +37,6 @@ app.get('/word', (req, res) => res.render('name'));
 app.use(authRoutes);
 
 
-
-})
 
 // import "./styles/Components.css";
 
