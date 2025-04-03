@@ -1,4 +1,8 @@
-
+html, body, #root{
+  height: 100vh !important;
+  margin: 0;
+}
+/* ABOVE THIS LINE IS NEW */
 .containertext{
     display: flex;
     width: 25%;
@@ -55,8 +59,8 @@
     background-image: url("/images/cat_Designpage1.png"); 
     /* background-image: url('./cat_Designpage1.png');  */
     background-color: maroon;
-    background-size: cover ;
-    height: 900px;
+    /* background-size: cover ; */
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     
@@ -67,7 +71,7 @@
     }
 
     
-  .footer-custom {
+  /* .footer-custom {
     align-items: center;
     text-align: center;
     color: white;
@@ -78,7 +82,7 @@
     text-align: center;
     z-index: 500;
 
-  }
+  } */
 
   .containerbuttons {
     display: flex;
@@ -221,6 +225,8 @@ button {
     margin: 15px 0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+    
 }
 
 /* Styled list */
@@ -503,7 +509,7 @@ a .nav-link  {
 .link-maroon .nav-link {
   color: maroon !important;
 }
-
+/* THIS IS THE LINE BELOW IS ALL NEW */
 /* Button.css */
 .custom-button {
     padding: 0.5rem 1rem;
@@ -615,6 +621,11 @@ a .nav-link  {
     padding: 10px;
     background-color: #f0f0f0;
     border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
 }
 /*maybe change this to a health only :-moz-user-disabled
 
@@ -678,6 +689,7 @@ a .nav-link  {
     background-color: #222;
     color: white;
     margin-top: 2rem;
+
 }
 
 .main {
@@ -690,4 +702,5 @@ a .nav-link  {
     padding: 4rem 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 40px;
 }

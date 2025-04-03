@@ -14,8 +14,6 @@ import Footer from "./components/Footer";
 import FooterButtons from './components/Footerbutton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './App.css';
-import "./styles/style.css";
 
 // import "./styles/Components.css";
 
@@ -24,11 +22,11 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="background-img">
+    <div className="background-img" id='app'>
       <Router>
         <>
-          <Navbar />
           <main>
+          <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path='/health' element={<Health />} />
@@ -41,9 +39,9 @@ function App() {
             </Routes>
 
 
-          </main>
-          <FooterButtons />
           <Footer />
+          <FooterButtons />
+          </main>
         </>
       </Router>
 

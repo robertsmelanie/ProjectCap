@@ -13,11 +13,9 @@ function Home() {
         <section className="hero">
           <h2>Welcome to Our Pet Store!</h2>
           <p>Your one-stop shop for all things pet-related.</p>
-          <div className="title">
-            <h1>
-              About Us - The Mighty Mouser
-            </h1>
-          </div>
+          {/* <div className="title">
+            
+          </div> */}
           <br />
 
          
@@ -82,7 +80,7 @@ function Home() {
                           <div className="offer-item">
                             <strong>📜 The History of Barn Cats:</strong>
                             <p>Discover the role cats have played in agriculture for centuries.</p>
-                            <ul class="styled-list">
+                            <ul className="styled-list">
                               <li>Ancient Roles</li>
                               <li>Modern Roles</li>
                               <li>Cultural Significance</li>
