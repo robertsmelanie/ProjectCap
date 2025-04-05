@@ -1,12 +1,13 @@
-require('dotenv').config(); //Load variables from the .env file
 const express = require('express');
 const mongoose = require('mongoose');
-//const productRoutes = require('./routes/productRoutes');
+const productRoutes = require('./routes/productRoutes');
+require('dotenv').config(); //Load variables from the .env file
+
 
 const app = express();
 app.use(express.json());
-// const PORT = process.env.PORT || 5000; // Use port from .env or default to 5000
-
+// const PORT = process.env.PORT || 3000; // Use port from .env or default to 5000
+console.log(process.env.MONGO_URI);
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
   
@@ -16,12 +17,12 @@ mongoose.connect(process.env.MONGO_URI)
 // --- Define a Mongoose Schema and Model ---
 // This defines the structure of the documents in your 'items' collection
 const itemSchema = new mongoose.Schema({
-    name: { type: String },
-    title: { type: String, required: true },
-    image: { type: String, required: true },
-    price: { type: String, required: true },
-    description: { type: String, required: true },
-    keywords: { type: String, required: true }, 
+    _id: { type: String, required: true },
+    ItemTitle: { type: String, required: true },
+    Image: { type: String },
+    Price: { type: String, required: true },
+    Description: { type: String, required: true },
+    Keywords: { type: Array }, 
     // Add other fields that match your JSON structure
 });
 
@@ -52,7 +53,7 @@ app.post('/api/items', async (req, res) => {
         res.status(201).json(savedItem);
     } catch (err) {
         console.error("Error adding item:", err);
-        // Check for validation errors specifically if needed
+        // Check for validation errors specificallyif needed
         if (err.name === 'ValidationError') {
             return res.status(400).json({ message: err.message });
         }
@@ -60,9 +61,10 @@ app.post('/api/items', async (req, res) => {
     }
 });
 // Use product routes
-//app.use('/api', productRoutes);
-// --- Start the Server ---
-const PORT = process.env.PORT || 5000;
+// app.use('/api', productRoutes);
+app.use('/api', productRoutes); // mount it under /api
+// --- Start the Server --
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
