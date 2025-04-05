@@ -2,8 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
 const router = express.Router();
-const Product = require('../models/product'); //Adjust the path as necessary
+const productRoutes = require('./routes/productRoutes');
 
+const Product = require('./models/productModel'); 
 
 const app = express();
 

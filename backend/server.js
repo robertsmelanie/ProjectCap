@@ -6,7 +6,7 @@ require('dotenv').config(); //Load variables from the .env file
 
 const app = express();
 app.use(express.json());
-// const PORT = process.env.PORT || 3000; // Use port from .env or default to 5000
+// const PORT = process.env.PORT || 3001; // Use port from .env or default to 5000
 console.log(process.env.MONGO_URI);
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
@@ -64,7 +64,7 @@ app.post('/api/items', async (req, res) => {
 // app.use('/api', productRoutes);
 app.use('/api', productRoutes); // mount it under /api
 // --- Start the Server --
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
