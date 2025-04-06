@@ -47,17 +47,20 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 const MONGO_URI = process.env.MONGO_URI;
+const cors = require('cors');
+
 
 console.log('🔍 MONGO_URI =', MONGO_URI);
 
 // Middleware
 app.use(express.static('public'));
 app.use(express.json());
-app.use(cookieParser());
-
+app.use(cookieP
+app.use(cors());
 // Routes
 app.use(authRoutes);
 app.use(productRoutes);
+
 
 app.get('/', (req, res) => res.send('🌐 Server is live!'));
 app.get('/items', (req, res) => res.send('🛍️ Items page'));
