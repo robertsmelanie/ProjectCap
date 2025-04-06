@@ -14,31 +14,31 @@ import Footer from "./components/Footer";
 import FooterButtons from './components/Footerbutton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // not sure if the below should be here or app.js
-const express = require('express');
-const mongoose = require('mongoose');
-const authRoutes = require('./routes/authRoutes');
-const router = express.Router();
+// const express = require('express');
+// const mongoose = require('mongoose');
+// const authRoutes = require('./routes/authRoutes');
+// const router = express.Router();
 //Adjust the path as necessary
 
 
-const app = express();
+// const app = express();
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // app.set('view engine', 'ejs');  I don't think I need this one
 
 //database connection
-const dbURI = 'mongodb.srv://more'
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
-  .then((result) => app.listen(3000))
-  .catch((err) => console.log(err));
+// const dbURI = 'mongodb.srv://more'
+// mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+//   .then((result) => app.listen(3000))
+//   .catch((err) => console.log(err));
 
   //routes moved to backend app.js
 // app.get('/', (req, res) => res.render('home'));
 // app.get('/items', (req, res) => res.render('items'));
 
-// app.use(authRoutes);
-axios.get('/products');
+// app.use(authRoutes); not sure where axios should be placed
+// axios.get('/products');
 // End list
 
 
