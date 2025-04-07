@@ -68,7 +68,7 @@ const BarnCatChat = () => {
 
     // Add welcome message on component mount
     useEffect(() => {
-        setMessages([{ sender: "cat", text: "Meow! I'm Dusty. What can I help you with today?" }]);
+        setMessages([{ sender: "cat", text: "Meow! I'm Tiger. What can I help you with today?" }]);
     }, []);
 
     const sendMessage = async () => {
@@ -112,14 +112,14 @@ const BarnCatChat = () => {
 
     return (
         <div className="barn-cat-chat">
-            <h3>Chat with Dusty 🐱</h3>
+            <h3>Chat with Tiger 🐱</h3>
             <div className="chat-box">
                 {messages.map((msg, i) => (
                     <div key={i} className={`msg ${msg.sender}`}>
                         {msg.sender === "cat" ? "🐾 " : "👤 "} {msg.text}
                     </div>
                 ))}
-                {loading && <div className="msg cat">Dusty is thinking...</div>}
+                {loading && <div className="msg cat">Tiger is thinking...</div>}
             </div>
             <div className="input-row">
                 <input
@@ -128,7 +128,7 @@ const BarnCatChat = () => {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    placeholder="Say something to Dusty"
+                    placeholder="Say something to Tiger"
                     disabled={loading}
                 />
                 <button onClick={sendMessage} disabled={loading || !input.trim()}>
