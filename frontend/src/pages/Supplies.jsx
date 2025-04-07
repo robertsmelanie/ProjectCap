@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Components.css';
 import BarnCatsImage from '../components/BarnCatsImage';
-// import { CartProvider } from './CartContext';
+
 
 function Supplies() {
     const [products, setProducts] = useState([]);
@@ -12,6 +12,8 @@ function Supplies() {
             .then((res) => setProducts(res.data))
             .catch((err) => console.error('Error fetching products:', err));
     }, []);
+
+  
 
     return (
         <>
@@ -36,20 +38,15 @@ function Supplies() {
                                             {products.map((product, index) => (
                                                 <div key={index} className="col-md-4 mb-4">
                                                     <div className="card h-100 shadow">
-                                                        {/* <CartProvider> */}
+                                                       
                                                             <img
                                                                 src={product.Image}
                                                                 className="card-img-top"
                                                                 alt={product.ItemTitle}
                                                                 style={{ height: '200px', objectFit: 'cover' }}
                                                             />
-                                                        {/* </CartProvider>
-                                                        {items.map((item) => (
-                                                            <div key={item.id}>
-                                                                <p>{item.name} - ${item.price}</p>
-                                                                <button onClick={() => addToCart(item)}>Add to Cart</button>
-                                                            </div>
-                                                        ))} */}
+                                                        
+                                                       
                                                         <div className="card-body">
                                                             <h5 className="card-title">{product.ItemTitle}</h5>
                                                             <p className="card-text">{product.Description}</p>
@@ -107,6 +104,12 @@ export default Supplies;
 //                                 alt={product.ItemTitle}
 //                                 style={{ height: '200px', objectFit: 'cover' }}
 //                             />
+//                              {items.map((item) => (
+//                                  <div key={item.id}>
+//                          <p>{item.name} - ${item.price}</p>
+//                          <button onClick={() => addToCart(item)}>Add to Cart</button>
+//                                  //</div>
+                                      //                  ))} */}
 //                             <div className="card-body">
 //                                 <h5 className="card-title">{product.ItemTitle}</h5>
 //                                 <p className="card-text">{product.Description}</p>
