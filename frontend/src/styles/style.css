@@ -576,3 +576,50 @@ a .nav-link {
     }
 }
 /* This is the original list but condenced to remove duplicates */
+.barn-cat-chat {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.msg {
+    margin-bottom: 8px;
+}
+
+.msg.cat {
+    color: #5d4037;
+    font-style: italic;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    background: #fbc02d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

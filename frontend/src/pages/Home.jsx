@@ -3,9 +3,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Components.css';
 import BarnCatsImage from '../components/BarnCatsImage';
-
+import { useState } from "react";
+import BarnCatChat from "./BarnCatChat";
 
 function Home() {
+  const [showChat, setShowChat] = useState(false);
   return (
     <>
 
@@ -22,7 +24,20 @@ function Home() {
             </h3>
           </div>
           <br />
+          <div className="text-center my-4">
+            <button
+              onClick={() => setShowChat((prev) => !prev)}
+              className="btn btn-warning"
+            >
+              {showChat ? "Hide Chat with Dusty 🐾" : "💬 Chat with Dusty the Barn Cat"}
+            </button>
 
+            {showChat && (
+              <div className="mt-3">
+                <BarnCatChat />
+              </div>
+            )}
+          </div>
          
             
             <div className="container-fluid container1 d-flex justify-content-center align-items-center py-5">
