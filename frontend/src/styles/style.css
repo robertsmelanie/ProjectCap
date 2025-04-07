@@ -82,7 +82,7 @@ a .nav-link {
 
 
 .background-img {
-    background-image: url('images/cat_Designpage1.png');
+    background-image: url('/images/cat_Designpage1.png');
     background-color: maroon;
     background-size: cover;
     /* height: 900px; */
