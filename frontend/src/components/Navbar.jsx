@@ -19,6 +19,7 @@ const Navbar = () => {
           <Link to="/about">About Us</Link>
           <Link to="/health">Health</Link>
           <Link to="/history">History</Link>
+          <Link to="/cart">Cart</Link>
         </div>
       </div>
       <div className="menu-links nav-links d-none d-md-flex">
@@ -27,6 +28,7 @@ const Navbar = () => {
         <Link to="/about">About Us</Link>
         <Link to="/health">Health</Link>
         <Link to="/history">History</Link>
+        <Link to="/cart">Cart</Link>
        
       </div>
       <div className="supplies-link">
@@ -157,6 +159,7 @@ export default Navbar;
 //         <li><Link to="/Catcalc">Cat Calculator</Link></li>
 //         <li><Link to="/Shop">Shop</Link></li>
 //         <li><Link to="/Supplies">Supplies</Link></li>
+
 //       </ul>
 
 

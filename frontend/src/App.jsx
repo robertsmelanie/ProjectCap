@@ -13,6 +13,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FooterButtons from './components/Footerbutton';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import { CartProvider } from './pages/CartContext';
+// import CartContent from './pages/CartContext';
 // not sure if the below should be here or app.js
 // const express = require('express');
 // const mongoose = require('mongoose');
@@ -33,7 +35,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //   .then((result) => app.listen(3000))
 //   .catch((err) => console.log(err));
 
-  //routes moved to backend app.js
+//routes moved to backend app.js
 // app.get('/', (req, res) => res.render('home'));
 // app.get('/items', (req, res) => res.render('items'));
 
@@ -45,14 +47,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  
+
 
   return (
     <div className="background-img" id='app'>
       <Router>
         <>
           <main>
-          <Navbar />
+            <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path='/health' element={<Health />} />
@@ -62,13 +64,14 @@ function App() {
               <Route path="/shop" element={<Shop />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='/calc' element={<Catcalc />} />
+              {/* <Route path="/cart" element={<Cart />} /> */}
             </Routes>
 
 
-          
+
             <FooterButtons />
             <br />
-          <Footer />
+            <Footer />
           </main>
         </>
       </Router>
