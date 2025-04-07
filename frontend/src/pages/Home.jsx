@@ -64,7 +64,7 @@ function Home() {
                               <li>Feeding Stations</li>
                               <li>Health Products</li>
                             </ul>
-                            <p><a href="./supplies.html" class="btn btn-light">Shop Now »</a></p>
+                            <p><a href="./supplies.html" className="btn btn-light">Shop Now »</a></p>
                           </div>
                         </section>
 

@@ -8,6 +8,7 @@ const BarnCatChat = () => {
 
     const sendMessage = async () => {
         if (!input.trim()) return;
+        console.log(input);
 
         const newMessages = [...messages, { sender: "user", text: input }];
         setMessages(newMessages);
@@ -15,7 +16,7 @@ const BarnCatChat = () => {
         setLoading(true);
 
         try {
-            const res = await fetch("https://your-backend-url.com/api/chat", {
+            const res = await fetch("http://localhost:3001/api/chat",  {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: input }),
@@ -52,9 +53,5 @@ const BarnCatChat = () => {
         </div>
     );
 };
-const res = await fetch("http://localhost:5000/api/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: input }),
-});
+
 export default BarnCatChat;
