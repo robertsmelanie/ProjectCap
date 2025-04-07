@@ -47,32 +47,64 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 const MONGO_URI = process.env.MONGO_URI;
+
+console.log('MONGO_URI =', MONGO_URI);
+
+
 const cors = require('cors');
 
 
-console.log('🔍 MONGO_URI =', MONGO_URI);
+
 
 // Middleware
 app.use(express.static('public'));
 app.use(express.json());
-app.use(cookieP
+app.use(cookieParser());
+
 app.use(cors());
+
 // Routes
 app.use(authRoutes);
 app.use(productRoutes);
 
 
-app.get('/', (req, res) => res.send('🌐 Server is live!'));
-app.get('/items', (req, res) => res.send('🛍️ Items page'));
+app.get('/', (req, res) => res.send('Server is live!'));
+app.get('/items', (req, res) => res.send('Items page'));
 
-// DB Connection
+// Database Connection
 mongoose.connect(MONGO_URI)
   .then(() => {
-    console.log('✅ MongoDB connected successfully');
-    app.listen(PORT, () => {
+    console.log('MongoDB connected successfully');
+    app.listen(PORT, '0.0.0.0', () => {
       console.log(`🚀 Server running on port ${PORT}`);
     });
   })
   .catch((err) => {
-    console.error('❌ MongoDB connection error:', err);
+    console.error('MongoDB connection error:', err);
   });
+
+// Database Connection
+// mongoose.connect(MONGO_URI);
+
+// mongoose.connection.on('connected', () => {
+//   console.log('MongoDB connected successfully');
+//   app.listen(PORT, () => {
+//     console.log(`🚀 Server running on port ${PORT}`);
+//   });
+// });
+
+// mongoose.connection.on('error', (err) => {
+//   console.error('MongoDB connection error:', err);
+// });
+
+// DB Connection
+// mongoose.connect(MONGO_URI)
+//   .then(() => {
+//     console.log('✅ MongoDB connected successfully');
+//     app.listen(PORT, () => {
+//       console.log(`🚀 Server running on port ${PORT}`);
+//     });
+//   })
+//   .catch((err) => {
+//     console.error('❌ MongoDB connection error:', err);
+//   });
