@@ -3,13 +3,18 @@ const mongoose = require('mongoose');
 const productRoutes = require('./routes/productRoutes');
 require('dotenv').config(); //Load variables from the .env file
 const bodyParser = require("body-parser");
-const { Configuration, OpenAIApi } = require("openai");
+// const { Configuration, OpenAIApi } = // require("openai");
+const { OpenAI } = require('openai');
+const cors = require('cors');
 
 
-app.use(bodyParser.json());
+
 
 const app = express();
+app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
+app.use(require('cors')());
 // const PORT = process.env.PORT || 3001; // Use port from .env or default to 5000
 console.log(process.env.MONGO_URI);
 // Connect to MongoDB
@@ -68,17 +73,17 @@ app.post('/api/items', async (req, res) => {
 // app.use('/api', productRoutes);
 app.use('/api', productRoutes); // mount it under /api
 // --- Start the Server --
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// const PORT = process.env.PORT || 3001;
+// app.listen(PORT, () => {
+//     console.log(`Server is running on http://localhost:${PORT}`);
+// });
 
 
 
-const configuration = new Configuration({
+const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY, // Set in .env or hosting dashboard
 });
-const openai = new OpenAIApi(configuration);
+// const openai = new OpenAIApi(configuration);
 
 app.post("/api/chat", async (req, res) => {
     const userMessage = req.body.message;
@@ -91,12 +96,12 @@ app.post("/api/chat", async (req, res) => {
     const messages = [systemPrompt, { role: "user", content: userMessage }];
 
     try {
-        const response = await openai.createChatCompletion({
+        const response = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
             messages,
         });
 
-        const reply = response.data.choices[0].message.content;
+        const reply = response.choices[0].message.content;
         res.json({ reply });
     } catch (error) {
         console.error("OpenAI error:", error.response?.data || error.message);
@@ -104,5 +109,9 @@ app.post("/api/chat", async (req, res) => {
     }
 });
 
-
+// --- Start Server ---
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
 
