@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require('../models/productModel');
 
 // GET all products
-router.get('/products', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const products = await Product.find();
         res.json(products);
@@ -13,7 +13,7 @@ router.get('/products', async (req, res) => {
 });
 
 // POST one OR many products
-router.post('/products', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         if (Array.isArray(req.body)) {
             const products = await Product.insertMany(req.body); // handle array

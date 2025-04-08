@@ -1,10 +1,5 @@
 /* This is a condenced form of the original css file */
-/* .cats9 {
-    display: flex;
-    width: 40%;
-    align-items: flex-end;
-    justify-content: right;
-} */
+
 
 .nav-bar {
     position: fixed;
@@ -127,20 +122,7 @@ a .nav-link {
 
 
 }
-/*Maroon Background Section 
- .containertext {
-     display: flex;
-     width: 25%;
-     align-items: start;
-     background-color: maroon;
-     padding: 20px;
-     border-radius: 8px;
-     width: 70%;
-     text-align: center;
-     justify-content: center;
 
-
- }*/
 /* Maroon Background Section */
 .containertext {
     display: flex;
@@ -453,22 +435,6 @@ select {
 .dropdown:hover .dropbtn {
     background-color: #A51212;
 }
-
-
-/*
-.supply-container {
-    max-height: 800px;
-    /* Limits height to 80% of the viewport 
-    width: 100%;
-    overflow-y: auto;
-    /* Enables vertical scrolling if content exceeds max height 
-    padding: 20px;
-    background: whitesmoke;
-    /* background: rgba(255, 255, 255, 0.8);  
-    /* Optional: Adds a slight white background to improve readability 
-    border-radius: 10px;
-    /* Optional: Adds rounded edges 
-} */
 
 
 
