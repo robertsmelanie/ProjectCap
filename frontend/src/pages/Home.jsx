@@ -27,7 +27,7 @@ function Home() {
           <div className="text-center my-4">
             <button
               onClick={() => setShowChat((prev) => !prev)}
-              className="btn-lg btn-primary text-white"
+              className="btn-lg primary-btn custom-drama-btn text-white"
             >
               {showChat ? "Hide Chat with Tiger 🐾" : "💬 Chat with Tiger the Barn Cat"}
             </button>

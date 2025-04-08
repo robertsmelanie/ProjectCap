@@ -34,13 +34,13 @@ const Navbar = () => {
       <div className="supplies-link">
         <button
           type="button"
-          className="btn btn-primary"
+          className="btn btn-primary custom-drama-btn"
           onClick={() => window.location.href = '/supplies'}
         >
           Buy Supplies
         </button>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary custom-drama-btn"
           onClick={() => window.location.href = '/calc'}
         >
           How Old Is My Cat?

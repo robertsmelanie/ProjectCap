@@ -589,3 +589,61 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
+
+.custom-btn {
+    background-color: #0e6ed5;
+    /* Bootstrap primary */
+    transition: property duration timing-function delay;
+    
+    
+} 
+
+custom-btn: hover {
+    background-color: #f7d56d;
+    transition: background-color 0.5x ease;
+    /* Darker blue for hover */
+}
+
+custom-btn: active {
+    background-color: #112233;
+    transition: background-color 0.5s ease;
+    /* Even darker for click */
+}
+
+/* 
+
+.custom-btn {
+    background-color: #007bff;
+    /* Bootstrap primary */
+    /* color: white;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; */
+    /* Darker blue for hover
+}
+
+.custom-btn:active {
+    background-color: #004085; */
+    /* Even darker for click */
+/* } */ 
+.custom-drama-btn {
+    background-color: blue;
+    /* Bright Bootstrap blue */
+    
+    transition: background-color 1s ease, color 1s ease;
+}
+
+/* Hover = HOT PINK */
+.custom-drama-btn:hover {
+    background-color: maroon;
+    /* DeepPink */
+    color: yellow;
+}
+
+/* Active/Click = BLACK */
+.custom-drama-btn:active {
+    background-color: sandybrown;
+    color: red;
+}
